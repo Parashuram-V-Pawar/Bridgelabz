@@ -18,7 +18,7 @@
 # Output:
 # CONFIRMED / WAITLISTED   # for each booking in order
 #
-
+# Function to allocate seats in bus based on the request
 def bus_seat_allocation(n) :
   max_seats = 40
   while n > 0:
@@ -34,7 +34,9 @@ def bus_seat_allocation(n) :
         max_seats -= num_of_bookings
     n -= 1
 
+# Input statement, and input validation
 n = int(input())
+# if input is negative value, print error message, else call the function
 if n <= 0:
   print("Enter a positive integer")
 else:
