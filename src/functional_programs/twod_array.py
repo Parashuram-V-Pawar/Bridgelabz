@@ -30,4 +30,7 @@ def two_d_array(row, col):
 
 row = int(input())
 col = int(input())
-two_d_array(row, col)
+if row < 0 or col <0 :
+  print("rows and columns value cannot be a negative integer.")
+else:
+  two_d_array(row, col)
