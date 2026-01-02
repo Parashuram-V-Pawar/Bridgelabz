@@ -4,15 +4,14 @@ def binary_search(arr, key):
 
     while left <= right:
         mid = (left + right) // 2
-
         if key == arr[mid]:
             return mid
-        if key <= arr[mid]:
-            left = mid + 1
-        else:
+        elif key < arr[mid]:
             right = mid - 1
+        else:
+            left = mid + 1
     return -1
 
-arr = [78, 54, 67, 34, 76, 87]
-key = 67
+arr = [10, 39, 45, 54, 67, 98, 109]
+key = 98
 print(binary_search(arr, key))
