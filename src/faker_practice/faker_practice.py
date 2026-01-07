@@ -28,10 +28,10 @@ print("\nIP Addresses:")
 def generate_ips(num):
     ips = []
     for i in range(num):
-        ip = fake.ipv6()
+        ip = fake.ipv4_public()
         ips.append(ip)
     return pd.DataFrame(ips)
-print(generate_ips(21))
+print(generate_ips(10))
 
 
 print("\nHTTP status codes:")
@@ -63,3 +63,4 @@ def fake_date_time(num):
         date_times.append(date_time)
     return pd.DataFrame(date_times)
 print(fake_date_time(20))
+
