@@ -72,7 +72,7 @@ CREATE TABLE lms.Enrollments (
     CONSTRAINT PK_Enrollment_Id
         PRIMARY KEY(enrollment_id),
     CONSTRAINT Check_Status
-        CHECK (enrollment_status in ('ACTIVE','COMPLETED','DROPPED')),
+        CHECK (enrollment_status in ('ACTIVE','INACTIVE','COMPLETED')),
     CONSTRAINT FK_Lessons_User_Id
         FOREIGN KEY(user_id) 
         REFERENCES lms.Users(user_id),

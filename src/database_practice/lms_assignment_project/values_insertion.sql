@@ -7,7 +7,8 @@ VALUES
 ('Database Design Fundamentals', 12),
 ('Python for Data Analysis', 15),
 ('Web Development Basics', 8),
-('Advanced Machine Learning', 20);
+('Advanced Machine Learning', 20),
+('Cloud Computing Fundamentals', 12);
 GO
 
 -- Inserting values into 'Users' table.
@@ -22,7 +23,14 @@ VALUES
 (7, 'Aditya Nair', 'aditya.nair@gmail.com', '9876543216'),
 (8, 'Pooja Reddy', 'pooja.reddy@gmail.com', '9876543217'),
 (9, 'Vikram Patil', 'vikram.patil@gmail.com', '9876543218'),
-(10, 'Neha Rao', 'neha.rao@gmail.com', '9876543219');
+(10, 'Neha Rao', 'neha.rao@gmail.com', '9876543219'),
+(11, 'Ravi Kumar',     'ravi.kumar101@gmail.com', '9876543210'),
+(12, 'Neha Sharma',   'neha.sharma102@gmail.com', '9876543211'),
+(13, 'Amit Verma',    'amit.verma103@gmail.com',  '9876543212'),
+(14, 'Pooja Singh',   'pooja.singh104@gmail.com', '9876543213'),
+(15, 'Karan Patel',   'karan.patel105@gmail.com', '9876543214');
+GO
+
 GO
 
 -- Inserting values into 'Lessons' table.
@@ -71,23 +79,24 @@ VALUES
 (1, '2026-01-02', 'ACTIVE', 1, 1),
 (2, '2026-01-04', 'COMPLETED', 1, 3),
 (3, '2026-01-05', 'ACTIVE', 1, 5),
-(4, '2026-01-06', 'DROPPED', 2, 2),
+(4, '2026-01-06', 'INACTIVE', 2, 2),
 (5, '2026-01-07', 'ACTIVE', 3, 3),
 (6, '2026-01-08', 'ACTIVE', 3, 4),
 (7, '2026-01-09', 'COMPLETED', 4, 1),
 (8, '2026-01-10', 'ACTIVE', 5, 5),
-(9, '2026-01-11', 'DROPPED', 6, 2),
+(9, '2026-01-11', 'INACTIVE', 6, 2),
 (10, '2026-01-12', 'ACTIVE', 6, 3),
 (11, '2026-01-13', 'ACTIVE', 7, 1),
 (12, '2026-01-14', 'COMPLETED', 7, 2),
 (13, '2026-01-15', 'ACTIVE', 7, 4),
 (14, '2026-01-16', 'ACTIVE', 8, 5),
-(15, '2026-01-17', 'DROPPED', 9, 3),
+(15, '2026-01-17', 'INACTIVE', 9, 3),
 (16, '2026-01-18', 'ACTIVE', 10, 2),
 (17, '2026-01-19', 'ACTIVE', 10, 4),
 (18, '2026-01-20', 'COMPLETED', 10, 5),
 (19, '2026-01-21', 'ACTIVE', 2, 5),
-(20, '2026-01-22', 'ACTIVE', 4, 3);
+(20, '2026-01-22', 'ACTIVE', 4, 3),
+(21, '2025-12-02', 'ACTIVE', 1, 4);
 GO
 
 -- Insert values into 'Assessments' table.
